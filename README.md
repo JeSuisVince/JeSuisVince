@@ -66,17 +66,6 @@
 
 ---
 
-## 🏢 Organizations
-
-<div align="center">
-
-[![Ynergie-Dev](https://img.shields.io/badge/Ynergie--Dev-FF0000?style=for-the-badge)](https://github.com/Ynergie-Dev)
-[![YVoiture](https://img.shields.io/badge/YVoiture-000000?style=for-the-badge)](https://github.com/YVoiture)
-
-</div>
-
----
-
 ## 📂 Mes Repos Clés
 
 <table align="center">
@@ -114,7 +103,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://fr.linkedin.com/in/vincent-fernandez-643495229)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JeSuisVince)
-[![Ynergie](https://img.shields.io/badge/Ynergie-FF0000?style=for-the-badge)](https://ynergie.com)
 
 </div>
 
