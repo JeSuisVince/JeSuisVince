@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=500&color=FF0000&center=true&vCenter=true&width=600&lines=Un+dimanche+sans+dev%2C+c'est+un+lundi;Backend+Django+%7C+Python+%7C+Refactoring;Ynergie+%7C+Toulouse+%7C+Thanos+Mode)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=500&color=FF0000&center=true&vCenter=true&width=600&lines=Un+dimanche+sans+dev%2C+c'est+un+lundi;Full+Stack+Developer+%7C+Django+%7C+React;Ynergie+%7C+Toulouse+%7C+Thanos+Mode)
 
-**Backend Developer obsédé par l'ordre** | *"Parfois il faut détruire pour reconstruire"* — Thanos
+**Full Stack Developer obsédé par l'ordre** | *"Parfois il faut détruire pour reconstruire"* — Thanos
 
 [LinkedIn](https://fr.linkedin.com/in/vincent-fernandez-643495229) • [Ynergie](https://ynergie.com) • Toulouse 🏘️
 
@@ -17,14 +17,20 @@
 ```python
 class VincentFernandez:
     def __init__(self):
-        self.role = "Backend Developer"
+        self.role = "Full Stack Developer"
         self.company = "Ynergie"
         self.location = "Toulouse"
         self.philosophy = "L'ordre, c'est la clé"
         self.mode = "Thanos"
         
+    def backend(self):
+        return ["Django", "Python", "PostgreSQL", "Docker"]
+        
+    def frontend(self):
+        return ["React", "TypeScript", "Tailwind", "Vite"]
+        
     def focus(self):
-        return ["Django", "CEE", "Facturation", "Réglementation", "Sécurité"]
+        return ["CEE", "Facturation", "Réglementation", "Sécurité"]
         
     def status(self):
         return "$ git status → Toujours quelque chose à commit 🚀"
@@ -50,6 +56,8 @@ class VincentFernandez:
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
