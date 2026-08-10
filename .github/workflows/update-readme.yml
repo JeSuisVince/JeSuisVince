@@ -1,3 +1,62 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Chaque jour à minuit UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fetch GitHub Stats
+        id: stats
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data } = await github.rest.users.getAuthenticated();
+            const username = data.login;
+
+            // Récupère les repos et contributions
+            const { data: repos } = await github.rest.repos.listForAuthenticatedUser({
+              per_page: 100,
+              sort: 'updated'
+            });
+
+            // Récupère les events pour calculer les stats
+            const { data: events } = await github.rest.activity.listEventsForAuthenticatedUser({
+              per_page: 300
+            });
+
+            let commits = 0, prs = 0, reviews = 0, issues = 0;
+            events.forEach(event => {
+              if (event.type === 'PushEvent') commits++;
+              else if (event.type === 'PullRequestEvent') prs++;
+              else if (event.type === 'IssueCommentEvent') reviews++;
+              else if (event.type === 'IssuesEvent') issues++;
+            });
+
+            const total = commits + prs + reviews + issues;
+            const commitPct = Math.round((commits / total) * 100);
+            const prPct = Math.round((prs / total) * 100);
+            const reviewPct = Math.round((reviews / total) * 100);
+
+            console.log(`Stats: ${commitPct}% commits, ${prPct}% PRs, ${reviewPct}% reviews`);
+
+            core.setOutput('commit_pct', commitPct);
+            core.setOutput('pr_pct', prPct);
+            core.setOutput('review_pct', reviewPct);
+            core.setOutput('total_events', total);
+
+      - name: Update README
+        run: |
+          cat > README.md << 'EOF'
 # 🔴 Vincent Fernandez (@JeSuisVince)
 
 <div align="center">
@@ -22,26 +81,28 @@ class VincentFernandez:
         self.location = "Toulouse"
         self.philosophy = "L'ordre, c'est la clé"
         self.mode = "Thanos"
-        
+
     def focus(self):
         return ["Django", "CEE", "Facturation", "Réglementation", "Sécurité"]
-        
+
     def status(self):
         return "$ git status → Toujours quelque chose à commit 🚀"
 ```
 
 ---
 
-## 📊 2026 By The Numbers
+## 📊 Stats Live 2026
 
 <div align="center">
 
 ```
-55% ████████░░ Commits      → Créateur
-28% ████░░░░░░ Pull Request → Reviewer  
-17% ███░░░░░░░ Code Review  → Évaluateur
+Stats Updated: $(date -u +'%Y-%m-%d %H:%M UTC')
 
-931+ Contributions in the last year
+Contributions this year: ${{ steps.stats.outputs.total_events }}
+
+${{ steps.stats.outputs.commit_pct }}% ████████░░ Commits      → Créateur
+${{ steps.stats.outputs.pr_pct }}% ████░░░░░░ Pull Request → Reviewer
+${{ steps.stats.outputs.review_pct }}% ███░░░░░░░ Code Review  → Évaluateur
 ```
 
 </div>
@@ -122,3 +183,12 @@ class VincentFernandez:
 ![Coding](https://media.giphy.com/media/LMt9638dO8dPEYGowZ/giphy.gif)
 
 </div>
+EOF
+
+      - name: Commit & Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "chore: update stats 🔴" || echo "No changes to commit"
+          git push
