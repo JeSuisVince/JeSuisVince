@@ -4,7 +4,7 @@
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=500&color=FF0000&center=true&vCenter=true&width=600&lines=Un+dimanche+sans+dev%2C+c'est+un+lundi;Full+Stack+Developer+%7C+Django+%7C+React;Ynergie+%7C+Toulouse+%7C+RNCP+Niveau+7)
 
-**Full Stack Developer | Expert en Développement Logiciel (RNCP Niveau 7)** | *"Parfois il faut détruire pour reconstruire"* — Thanos
+**Full Stack Developer | Expert en Développement Logiciel (RNCP Niveau 7)**
 
 [LinkedIn](https://fr.linkedin.com/in/vincent-fernandez-643495229) • [Ynergie](https://ynergie.com) • Toulouse 🏘️
 
@@ -108,18 +108,6 @@
 
 ---
 
-## 🎯 Expertise
-
-- **Développement Full Stack** — Architecture, conception et déploiement d'applications web
-- **API REST** — Conception d'APIs robustes, sécurisées et évolutives
-- **Gestion de Projet Agile** — Scrum, user stories, planification et suivi
-- **Sécurité** — Authentification, autorisation, protection des accès
-- **Domaines métier** — CEE, Réglementation, Facturation, IoT
-- **Performance** — Optimisation applicative et tests unitaires/fonctionnels
-- **Infrastructure** — Déploiement, supervision et gestion des environnements
-
----
-
 ## 🔗 Connect With Me
 
 <div align="center">
@@ -127,8 +115,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://fr.linkedin.com/in/vincent-fernandez-643495229)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JeSuisVince)
 [![Ynergie](https://img.shields.io/badge/Ynergie-FF0000?style=for-the-badge)](https://ynergie.com)
-
-**Location:** Toulouse 🌿 | **Status:** Coding 24/7 🔴 | **Cert:** RNCP Niveau 7 ⭐
 
 </div>
 
