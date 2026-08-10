@@ -12,39 +12,6 @@
 
 ---
 
-## 🔴 Qui suis-je?
-
-```python
-class VincentFernandez:
-    def __init__(self):
-        self.role = "Full Stack Developer"
-        self.certification = "RNCP39583 - Expert en Développement Logiciel (Niveau 7)"
-        self.company = "Ynergie"
-        self.location = "Toulouse"
-        self.philosophy = "L'ordre, c'est la clé"
-        self.mode = "Thanos"
-        
-    def backend(self):
-        return ["Django", "Python", "PHP", "Symfony", "Node.js"]
-        
-    def frontend(self):
-        return ["React", "TypeScript", "Angular", "AngularJS", "HTML/CSS", "Tailwind"]
-        
-    def databases(self):
-        return ["PostgreSQL", "SQL", "NoSQL"]
-        
-    def devops_cloud(self):
-        return ["Docker", "Kubernetes", "GCP (Google Cloud Platform)", "CI/CD"]
-        
-    def expertise(self):
-        return ["Gestion de projet agile", "Scrum", "API REST", "Sécurité", "CEE", "Facturation", "Réglementation", "IoT"]
-        
-    def status(self):
-        return "$ git status → Toujours quelque chose à commit 🚀"
-```
-
----
-
 ## 📊 2026 By The Numbers
 
 <div align="center">
@@ -165,12 +132,3 @@ class VincentFernandez:
 
 </div>
 
----
-
-<div align="center">
-
-### 🚀 *"L'équilibre parfait entre la création et la destruction"* — Thanos
-
-**Le refactoring, c'est mon superpovoir** 🔴
-
-</div>
