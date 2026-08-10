@@ -2,8 +2,6 @@
 
 <div align="center">
 
-<img src="https://media.giphy.com/media/xT9IgEx8SbQ9CpHe8w/giphy.gif" width="400" alt="Thanos">
-
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=500&color=FF0000&center=true&vCenter=true&width=600&lines=Un+dimanche+sans+dev%2C+c'est+un+lundi;Backend+Django+%7C+Python+%7C+Refactoring;Ynergie+%7C+Toulouse+%7C+Thanos+Mode)
 
 **Backend Developer obsédé par l'ordre** | *"Parfois il faut détruire pour reconstruire"* — Thanos
@@ -120,7 +118,5 @@ class VincentFernandez:
 ### 🚀 *"L'équilibre parfait entre la création et la destruction"* — Thanos
 
 **Le refactoring, c'est mon superpovoir** 🔴
-
-<img src="https://media.giphy.com/media/cHWQspgL94D5n5OQwI/giphy.gif" width="300" alt="Thanos Snap">
 
 </div>
