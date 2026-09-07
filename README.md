@@ -17,11 +17,11 @@
 <div align="center">
 
 ```
-55% ████████░░ Commits      → Créateur
-28% ████░░░░░░ Pull Request → Reviewer  
-17% ███░░░░░░░ Code Review  → Évaluateur
+59% ██████░░░░ Commits      → Créateur
+26% ███░░░░░░░ Pull Request → Reviewer
+15% ██░░░░░░░░ Code Review  → Évaluateur
 
-931+ Contributions in the last year
+1 618 Contributions in the last year
 ```
 
 </div>
@@ -73,7 +73,7 @@
     <td align="center" width="50%">
       <h3><a href="https://github.com/Ynergie-Dev/ynergie-app">ynergie-app</a></h3>
       <p>Monorepo CEE / Réglementation</p>
-      <p>2.4k+ ⭐ | Django | React | TypeScript</p>
+      <p>Dépôt privé | Django | React | TypeScript</p>
     </td>
     <td align="center" width="50%">
       <h3><a href="https://github.com/JeSuisVince/TP1_DEVOPS">TP_DEVOPS</a></h3>
