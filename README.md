@@ -12,20 +12,6 @@
 
 ---
 
-## 📊 2026 By The Numbers
-
-<div align="center">
-
-```
-59% ██████░░░░ Commits      → Créateur
-26% ███░░░░░░░ Pull Request → Reviewer
-15% ██░░░░░░░░ Code Review  → Évaluateur
-
-1 618 Contributions in the last year
-```
-
-</div>
-
 **Backend Stack:**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
